@@ -1,0 +1,90 @@
+*body,html{
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+align-items: center;
+}
+
+.container span{
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    margin-top: 8px;
+    border-radius: 50%;
+    animation: loader 5s  linear  infinite;
+}
+
+.container span:nth-child(1)
+{
+    animation-delay: 0s;
+}
+
+.container span:nth-child(2)
+{
+    animation-delay: 0.25s;
+}
+
+.container span:nth-child(3)
+{
+    animation-delay: 0.50s;
+}
+
+.container span:nth-child(4)
+{
+    animation-delay: 0.75s;
+}
+
+.container span:nth-child(5)
+{
+    animation-delay: 1s;
+}
+@keyframes loader{
+    0%,100%{
+        transform: scale(0);
+    }
+    
+    50%{
+        transform: scale(1);
+    }
+}
+.navbar{
+    background-color: black;
+    border-radius: 30px;
+}
+.navbar ul{
+    overflow: auto
+}
+.navbar li{
+    float: left;
+    list-style: none;
+    margin: 10px 20px;
+}
+.navbar li a:hover{
+    color: aqua;
+    background-color: blue;
+}
+.navbar li a{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: white
+}
+.search{
+    float: left;
+    color: white;
+    padding: 12px 75px;
+}
+.navbar input{
+    border: 2px solid black;
+    border-radius: 14px;
+    padding: 3px 17px;
+    width: 129px;
+}
